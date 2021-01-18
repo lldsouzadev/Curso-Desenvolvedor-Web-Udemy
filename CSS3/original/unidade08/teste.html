@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de CSS</title>
+        
+        <style>
+            html, body {
+                margin:0;
+                padding:0;
+            }
+
+            body {
+                background:rgb(229,229,229);
+            }
+
+            article, aside, section, header, footer, nav {
+                display:block;
+            }
+
+            main {
+                width: 1480px;
+                height: 3000px;
+                margin: 0 auto;
+                box-shadow: 0 0 10px #333;
+                background-color: white;
+            }
+
+            header {
+                width: 1480px;
+                margin: 0 auto;
+                height: 80px;
+                background-color: #FF7F00;
+                border-bottom: solid 8px #999;
+            }
+
+            nav {
+                position:fixed;
+                z-index: 5;
+                top: 0;
+                left: 0;
+                width: 50px;
+                min-height: 1000px;
+                background-color: #B28500;
+            }
+
+            .conteudo {
+                float: left;
+                width: 1480px;
+                height: 585px;
+                background-color: #FFD24D;
+            }
+            
+            .infoPedidos {
+                float: left;
+                width: 1480px;
+                height: 540px;
+                background-color: darkred;
+            }
+            
+            .ultimosPedidos{
+                float: left;
+                width: 575px;
+                height: 485px;
+                background-color: antiquewhite;
+                margin-left: 170px;
+                margin-top: 35px;
+                border-radius: 25px;
+            }
+            .ultimasMensagens{
+                width: 575px;
+                height: 485px;
+                border-radius: 25px;
+                margin-top: 35px;
+                margin-right: 120px;
+                background-color: antiquewhite;
+                float: right;
+                
+            }
+            
+            .infoDiscord {
+                float: left;
+                width: 1480px;
+                height: 675px;
+                background-color:brown;
+            }
+            
+            .caixaDiscord{
+                
+                margin-left: 400px;
+                margin-top: 125px;
+                width: 720px;
+                height: 505px;
+                background-color: antiquewhite;
+                border-radius: 10px;
+            }
+            
+            .infoRadios{
+                float:left;
+                width: 1480px;
+                height: 415px;
+                border-bottom: solid 15px #FFF;
+                background-color: darkgreen;
+            }
+            
+            .infoParceiros{
+                float:left;
+                width: 1480px;
+                height: 315px;
+                border-bottom-style: groove;
+                border-bottom-width: 0.1px;
+                border-bottom-color: #DDD;
+                background-color:darkslateblue;
+            }
+
+            footer {
+                float:left;
+                width: 1480px;
+                height: 485px;
+                background-color:darkslateblue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <header></header>
+            <nav></nav>
+
+            <section class="conteudo"></section>
+            <section class="infoPedidos">
+                <div class="ultimosPedidos"></div>
+                <div class="ultimasMensagens"></div>
+            </section>
+            <section class="infoDiscord">
+                <div class="caixaDiscord"></div>
+            </section>
+            <section class="infoRadios"></section>
+            <section class="infoParceiros"></section>
+
+            <footer></footer>
+        </main>
+    </body>
+</html>

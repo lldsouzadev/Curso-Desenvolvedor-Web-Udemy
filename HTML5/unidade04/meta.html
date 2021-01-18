@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+    <head>
+        <title>Unidade 02 - Elemento Head</title>
+        <meta charset="utf-8">
+        <meta name="author"     content="Leandro Luiz de Souza">
+        <meta name="generator"      content="Brackets">
+        <meta name="keywords"       content="tags, separadas, po, virgula">
+        <meta name="description"    content="Descrição da pagina">
+        <meta name="application-name"       content="Nome da aplicação">
+        
+        <meta http-equiv="refresh" content="4">
+        
+        <style>
+            body {
+                background: #ccc;
+                font-family: arial,sans-serif;
+                color: black;
+            }
+        </style>
+        
+        <script>
+            function sorteioNumero() {
+                resultado.innerHTML = Math.random() * 50;
+            }
+            window.onload = sorteioNumero;
+        </script>
+
+    </head>
+    <body>
+        <p id="resultado"></p>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Curso HTML5 Essencial</title>
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+        
+        <script>
+            function mostrarResultado() {
+                document.getElementById("resultado").innerHTML = document.getElementById("filhos").value;
+            }
+        </script>
+    </head>
+
+    <body>
+        
+        <h2>Formulário</h2>
+        <form action="destino.html" method="post">
+            <label for="nome">Nome completo</label>
+            <input type="text" name="nome" id="nome" size="30" maxlength="100" required autofocus placeholder="Insira seu nome completo">
+            
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" size="30" maxlength="30" placeholder="Insira seu telefone"> 
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" size="30" maxlength="60" required placeholder="Insira seu e-mail">             
+            
+            <label for="website">Web Site</label>
+            <input type="url" name="website" id="website" size="30" maxlength="60" placeholder="Insira seu site">
+            
+            <input type="number" name="filhos" id="filhos" min="1" max="5" value="1">
+            
+            <label for="aniversario">Aniversário</label>
+            <input type="date"  name="aniversario" id="aniversario" size="30" required>
+            
+            <input type="text" list="lojas" name="nome_loja" id="nome_loja" placeholder="Digite o nome da loja" size="40" maxlength="100">
+            <datalist id="lojas">
+                <option value="Centauro">Centauro</option>
+                <option value="Centro Automotivo">Centro Automotivo</option>
+                <option value="Centro Ótico">Centro Ótico</option>
+                <option value="Magazine Luiza">Magazine Luiza</option>
+                <option value="McDonalds">McDonalds</option>
+            </datalist>
+            
+                <input type="range" id="filhos" min="1" max="10" value="1" onchange="mostrarResultado()">
+            <span id="resultado"></span>
+            
+            <input type="submit" value="Enviar" id="enviar" name="enviar">
+        </form>
+    
+    </body>
+</html>

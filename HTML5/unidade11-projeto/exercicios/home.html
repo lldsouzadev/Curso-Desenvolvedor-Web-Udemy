@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <title>Menu</title>
+        
+        <style>
+            html { 
+                background-color:#211212 
+            }
+            
+            main { 
+                width:955px; 
+                margin:-1px auto 10px; 
+                border:1px solid #211212; 
+                background-color:#110909; 
+                font-family:Arial, Helvetica, sans-serif 
+            }
+            
+            header { 
+                width:955px; 
+                height:95px 
+            }
+            
+            nav { 
+                width: 955px; 
+                background-color: #5D240A;
+                margin-bottom: 10px;
+            }
+            nav ul { 
+                list-style:none; 
+                margin:0; 
+                padding:4px 
+            }
+            nav ul li { 
+                display:inline-block 
+            }
+            nav ul li a { 
+                font-size: 0.85em; 
+                text-decoration: none; 
+                color: #FFF; 
+                padding: 4px 20px 
+            }
+            nav ul li a:hover { 
+                background-color: #B4531A 
+            }
+            
+            article { 
+                float:left; 
+                margin:20px 20px; 
+                width:600px 
+            }
+            article header hgroup h1 {
+                margin:0;
+            }
+            article header hgroup h5 {
+                margin:0; 
+                font-size: 1.1em; 
+                color:#ccc;
+                font-weight: 100;
+            }
+            
+            aside {
+                float:left;
+                width:600px;
+                border-top:1px solid #CC6633;
+                border-bottom:1px solid #CC6633;
+                padding:10px 5px 0;
+                font-style: italic;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                background: url(../imagens/Aspas1.png) no-repeat;
+            }            
+            aside p {
+                color:#999;   
+            }
+            
+            #apoio { 
+                padding-top: 30px;
+                float:right; 
+                width:300px; 
+                margin-top:30px 
+            }
+            .img-home {
+                border: 1px solid #FFF;
+                width: 598px;
+                height: 402px;
+                margin-left: 10px;
+            }
+            
+            footer { 
+                clear:both; 
+                width:700px; 
+                margin:0 auto; 
+                font-size:0.75em; 
+                text-align:center; 
+                background-color:#110909; 
+                padding:5px 
+            }
+            
+            h1, h2, h4 { 
+                font-family:Georgia, "Times New Roman", Times, serif; 
+                color:#C63; 
+                font-style:italic; 
+                letter-spacing:-0.05em 
+            }
+            h1 { 
+                font-size:2.6em; 
+                margin:0 5px; 
+            }
+            h2 { 
+                font-size:2.1em; 
+                margin:0 5px;
+                text-align: center;
+            }
+            h4 { 
+                font-size:1.6em; 
+                margin:0 5px;
+                padding-bottom: 5px;
+                
+            }
+            
+            #home1{
+                margin-left: 82px;  
+            }
+            #home2{
+                margin-left: 152px;
+            }
+            #home3{
+                margin-left: 32px;
+                color:crimson;
+            }
+            
+            p, li { 
+                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; 
+                font-size:0.9em; 
+                color:#555; 
+                line-height:1.8 
+            }
+
+        </style> 
+	</head>
+    
+    <body>
+        
+        <main>
+    
+            <header>
+                <img src="../imagens/topo_principal.jpg">
+            </header>
+
+            <nav>
+                <ul>
+                  <li><a href="../../unidade11-projeto/exercicios/home.html">Home</a></li>
+                  <li><a href="info.html">Info</a></li>
+                  <li><a href="../../unidade11-projeto/exercicios/special-events.html">Special Events</a></li>
+                  <li><a href="dvd.html">DVD</a></li>
+                  <li><a href="location.htm">Location</a></li>
+                  <li><a href="../../unidade11-projeto/exercicios/menu.html">Menu</a></li>
+                  <li><a href="../../unidade09/exercicio/index.html">Review</a></li>
+                </ul>
+            </nav >
+
+            <article>
+                <section class="Home">
+                    <aside>
+                    <h1 id="home1">
+                        Come, Join Us!<br>
+                    </h1>
+                    
+                    <h1 id="home2">
+                        and make this your<br>
+                    </h1>
+                    <h1 id="home3">
+                        <i>Raison d'être~</i>
+                    </h1>
+                    </aside>
+                    <p>
+                        <img src="../imagens/latte.jpg" 
+                             width="600" 
+                             height="401" 
+                             title="A cup of latte" 
+                             alt="A cup of Latte"
+                             class="img-home"/>
+                    </p>
+                </section>
+            </article>
+
+            <div class="apoio">
+                <section class="fotos_apoio">
+                    <h4>Mapa</h4>
+                    <img src="../imagens/mapa_como_chegar.gif" width="275" height="299" />
+                </section>
+
+                <section class="fotos_apoio">
+                    <h4>Fotos</h4>
+                    <img src="../imagens/fotos.jpg" width="275" height="205" />
+                </section>
+
+                <section class="fotos_apoio">
+                    <h4>Vinhos</h4>
+                    <img src="../imagens/vinhos.jpg" width="275" height="203" />    
+                </section>
+            </div>
+
+            <footer>
+                <p>Cafe Fontenebleu - Rua Ernesto de Paula Santos, 187 Sala 506 - Recife-PE</p>
+                <p><small>&copy; Copyright 2015 - iMedia Brasil todos os direitos reservados.</small></p>
+            </footer>
+    
+        </main>
+    </body>
+
+</html>

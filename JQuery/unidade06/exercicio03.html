@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+        
+        <style>
+			#janela { border:1px solid #666; width:200px; height:200px; margin-top:10px }
+		</style>
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+            /*
+            
+            $(function(e){
+                $('#botaoazul').on("click", colorirAzul);
+                $('#botaovermelho').on("click", colorirVermelho); 
+                $('#botaoverde').on("click", colorirVerde); 
+            })
+                
+            function colorirAzul(){
+                $('#janela').css('background-color', 'blue');
+            }
+            
+            function colorirVermelho(){
+                $('#janela').css('background-color', 'red');
+            }
+            
+            function colorirVerde(){
+                $('#janela').css('background-color', 'green');
+            }]
+            
+            */
+            
+            function colorirArea(e){
+                $cor = e.data.cor;
+                $('#janela').css('background-color', $cor);
+            }
+            
+            $(function(e){
+                $('#botaoazul').on("click", {cor:'blue'}, colorirArea);
+                $('#botaovermelho').on("click", {cor:'red'}, colorirArea); 
+                $('#botaoverde').on("click", {cor:'green'}, colorirArea); 
+            })
+            
+            
+            
+            
+            
+            
+            
+            
+	 	</script>        
+    </head>
+    
+    
+
+    <body>
+    	<input type="submit" id="botaoazul" 	value="blue">
+        <input type="submit" id="botaovermelho" value="red">
+        <input type="submit" id="botaoverde" 	value="green">
+        
+        <div id="janela"></div>
+    </body>
+</html>

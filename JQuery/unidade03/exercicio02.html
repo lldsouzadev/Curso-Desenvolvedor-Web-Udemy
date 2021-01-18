@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title> 
+    </head>
+
+    <body>
+    	<nav>
+        	<a href="#">Brasil</a>
+            <a href="#">Argentina</a>
+            <a href="#">Uruguai</a>
+            <a href="#">Chile</a>
+        </nav>
+        
+        <a href="#">Pindamanhagaba</a>
+		<!-- scripts -->
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>    
+        	$(function(){
+                $("nav a").css("color", "red")
+                    .css("text-decoration", "none")
+                    .css("display", "inline-block")
+                    .css("margin-right", "5px")
+                    .css("margin-bottom", "10px")
+                    .css("font-size", "18px")
+                    .delay(2000)
+                    .fadeIn(2000).fadeOut(6000).fadeIn(1000);
+            }); 
+            
+            /*  $("nav a:first")
+                $("nav a:last")
+                $("nav a:nth(x)")
+                $("nav a:contains("Brasil")")
+                $("nav a:Odd")
+                $("nav a:even")
+            
+            */
+            
+            /* alert("Esta página contem: " + $("a").length + " links"); */
+        </script>   
+                
+    </body>
+</html>
