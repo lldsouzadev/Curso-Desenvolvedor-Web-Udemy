@@ -10,4 +10,4 @@
 
  Mais tópicos serão adicionados a medida que realizo o curso.
 
- Link para o curso: https://www.udemy.com/course/curso-desenvolvedor-web-completo/
+ Link para o curso: [Clique aqui](https://www.udemy.com/course/curso-desenvolvedor-web-completo/)
